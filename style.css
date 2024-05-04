@@ -9,6 +9,7 @@ body {
     background-position: center;
     background-size: cover;
     color: #ffffff;
+    
 
 }
 
@@ -56,6 +57,7 @@ header span.ham {
     margin: 50px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 #hero h1 {
@@ -212,6 +214,7 @@ header span.ham {
     color: black;
     /* border-radius: 30px; */
     padding-top: 40px;
+    overflow: hidden;
     
 }
 
