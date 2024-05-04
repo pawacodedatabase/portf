@@ -59,7 +59,7 @@ header span.ham {
 }
 
 #hero h1 {
-    font-size: 50px;
+    font-size: 45px;
     color: #ffffff;
     align-items: center;
     text-shadow: 0px 0px 1px white;
@@ -698,6 +698,11 @@ hr {
         height: 1200px;
     }
     
+
+    .aright img {
+        width: 80%;
+        
+    }
     
 
     .aleft {
