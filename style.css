@@ -676,6 +676,7 @@ hr {
 
     #contact {
         padding: 50px;
+        height: 1100px;
     }
 
     .ccontainer {
@@ -693,7 +694,11 @@ hr {
 
     #about {
         flex-direction: column;
+        /* padding-top: 420px; */
+        height: 1200px;
     }
+    
+    
 
     .aleft {
         margin: 50px;
