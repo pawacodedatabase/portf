@@ -21,6 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    
 }
 
 header ul {
@@ -58,6 +59,7 @@ header span.ham {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    /* height: 100vh; */
 }
 
 #hero h1 {
@@ -179,30 +181,6 @@ header span.ham {
     justify-content: space-between;
 }
 
-.serviceicon h1{
-    color: rgb(221, 83, 83);
-    font-size: 20px;
-    text-align: center;
-    border: 3px solid ;
-    border-radius: 50px;
-    padding: 10px;
-
-
-}
-
-.serviceicon h1:hover {
-    color: rgb(17, 17, 17);
-}
-.serviceicon p {
-    max-width: 250px;
-    padding: 20px;
-}
-
-.serviceicon p::first-letter {
-    font-size: 40px;
-    font-style: italic;
-    color: red;
-}
 .serviceicon img {
     width: 200px;
     height: 200px;
@@ -210,15 +188,126 @@ header span.ham {
 
 
 #services {
-    background-color: rgb(201, 201, 202);
+    background-color: #ffffffe7;
     color: black;
     /* border-radius: 30px; */
     padding-top: 40px;
     overflow: hidden;
     
+    
 }
 
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+.card-image .card-img {
+    height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid rgb(244, 45, 45);
+
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+    width: 320px;
+    box-shadow: 5px 5px 5px snow;
+}
+
+.image-content , .card-content  {
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content {
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+   
+}
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.description {
+    max-width: 300px;
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(244, 45, 45);
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 14px;
+cursor: pointer;
+}
+
+.button:hover {
+    color: #fff;
+    background: rgb(240, 90, 90);
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(244, 45, 45);
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before , .overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+
+    height: 40px;
+    width: 40px;
+    background-color: rgb(244, 45, 45);
+}
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
 /* ///////////contact//////// */
 
 #contact {
@@ -253,6 +342,9 @@ header span.ham {
     
 }
 
+.col h4 {
+    text-decoration: none;
+}
 .ccontainer {
     width: 100%;
     display: flex;
@@ -456,7 +548,8 @@ footer {
     width: 100%;
     position: relative;
     bottom: 0;
-    background: linear-gradient(to right, rgb(47, 35, 35), rgb(87, 22, 22),rgb(81, 24, 24), red, rgb(116, 11, 11), red);
+    background-color: #000;
+    /* background: linear-gradient(to right, rgb(47, 35, 35), rgb(87, 22, 22),rgb(81, 24, 24), red, rgb(116, 11, 11), red); */
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
@@ -514,7 +607,7 @@ ul li a {
 
 }
 ul li a:hover {
-    color: #000;
+    color: grey;
     border-bottom: 2px solid #000;
     
 }
@@ -668,7 +761,8 @@ hr {
     }
 
     #hero img {
-        width: 90%;
+        width: 100%;
+        height: 100%;
         margin: 50px;
         
     }
