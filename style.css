@@ -9,7 +9,7 @@ body {
     background-position: center;
     background-size: cover;
     color: #ffffff;
-    
+    font-family: "Sedan SC", serif;
 
 }
 
@@ -83,6 +83,9 @@ header span.ham {
     max-width: 700px;
     margin: 30px;
     font-size: 20px;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+    
 }
 
 #hero p::first-letter{
@@ -244,8 +247,8 @@ border: 4px solid rgb(244, 45, 45);
    
 }
 .name {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 900;
     color: #333;
 }
 
@@ -292,6 +295,12 @@ cursor: pointer;
     height: 100%;
     background-color: rgb(244, 45, 45);
     border-radius: 25px 25px 0 25px;
+}
+
+.card p {
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 
 .overlay::before , .overlay::after {
@@ -708,6 +717,7 @@ hr {
 .social i:hover {
     background-color: black;
     color: #ccc;
+    border: 2px solid #ccc;
 
 }
 
