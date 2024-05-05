@@ -768,13 +768,14 @@ hr {
 
     #hero {
         flex-direction: column;
+        
     }
 
     #hero img {
         width: 100%;
         height: 100%;
         margin: 50px;
-        
+        margin: auto;
     }
 
     #hero button {
@@ -788,6 +789,7 @@ hr {
 
     .ccontainer {
         flex-direction: column;
+        justify-content: center;
     }
 
     .ccontainer .contactinfo {
@@ -803,6 +805,7 @@ hr {
         flex-direction: column;
         /* padding-top: 420px; */
         height: 1200px;
+        justify-content: center;
     }
     
 
