@@ -45,3 +45,17 @@ item.addEventListener('click', activeLink))
     con.addEventListener ('click', ()=> {
         con.innerText = 'THANK YOU!';
     })
+    let contact = document.getElementById('hired')
+
+    contact.addEventListener ('click', ()=> {
+        contact.innerText = 'THANK YOU!';
+    })
+
+
+    // $(document).ready(function(){
+    //     $('.button').click(){
+    //         $('.button').css({
+    //                     'background': 'black', 'color':'white'})  
+    //         })
+
+    // })
