@@ -59,3 +59,18 @@ item.addEventListener('click', activeLink))
     //         })
 
     // })
+
+    const textElement = document.getElementById('animatedText');
+    const text = textElement.textContent;
+    let index = 0;
+
+    function animateText() {
+      textElement.textContent = text.slice(0, index);
+      index++;
+
+      if (index <= text.length) {
+        requestAnimationFrame(animateText);
+      }
+    }
+
+    animateText();
